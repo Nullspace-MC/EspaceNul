@@ -1,0 +1,27 @@
+{
+	"schemaVersion": 1,
+	"id": "espacenul",
+	"version": "${version}",
+	"name": "EspaceNul",
+	"description": "Modded client for the Nullspace minecraft server",
+	"authors": [
+		"SRAZKVT"
+	],
+	"contact": {
+		"homepage": "https://github.com/NullspaceMC/EspaceNul",
+		"sources": "https://github.com/NullspaceMC/EspaceNul"
+	},
+	"license": "MIT",
+	"icon": "assets/espacenul/icon.png",
+	"environment": "client",
+  "entrypoints": {
+    "modmenu": ["net.nullspacemc.espacenul.config.ModmenuConfigScreenFactory"]
+  },
+	"mixins": [
+    "espacenul.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.21",
+		"minecraft": "1.7.2"
+	}
+}
