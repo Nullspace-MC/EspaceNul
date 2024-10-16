@@ -12,6 +12,7 @@
     "FeatureDisableFogMixin$GameRendererMixin",
     "FeatureFixScoreboardNoRenderMixin$ScoreboardMixin",
     "FeatureGroupDigitsScoreboardScoreMixin$GameGuiMixin",
+    "FeatureGroupDigitsScoreboardScoreMixin$PlayerEntityRendererMixin",
     "FeatureHigherFlySpeedMixin$PlayerAbilitiesMixin",
     "FeatureLongerChatMessageMixin$ChatScreenMixin"
   ],
