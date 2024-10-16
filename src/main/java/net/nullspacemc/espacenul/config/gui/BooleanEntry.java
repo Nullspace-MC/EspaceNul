@@ -39,7 +39,6 @@ public class BooleanEntry implements EntryListWidget.Entry {
 		if (this.button.isMouseOver(Minecraft.getInstance(), mouseX, mouseY)) {
 			this.consumer.accept(!this.supplier.get());
 			this.button.message = String.valueOf(this.supplier.get());
-			EspaceNul.LOGGER.info("toggled {} to {}", key, this.supplier.get());
 			return true;
 		}
 		return false;

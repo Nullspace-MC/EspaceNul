@@ -1,5 +1,7 @@
 {
   "net.nullspacemc.espacenul.creativenoclip": "noClip",
+  "net.nullspacemc.espacenul.disablefog": "disableFog",
+  "net.nullspacemc.espacenul.higherflyspeed": "higherFlySpeed - WIP",
   "net.nullspacemc.espacenul.close": "Close",
-  "net.nullspacemc.espacenul.menutitle": "EspaceNul Config" 
+  "net.nullspacemc.espacenul.menutitle": "EspaceNul Config"
 }

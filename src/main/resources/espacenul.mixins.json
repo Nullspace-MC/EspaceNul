@@ -9,7 +9,10 @@
     "FeatureCreativeNoClipMixin$MovingBlockEntityMixin",
     "FeatureCreativeNoClipMixin$PlayerMixin",
     "FeatureCreativeNoClipMixin$RenderChunkMixin",
-    ,
+    "FeatureDisableFogMixin$GameRendererMixin",
+    "FeatureFixScoreboardNoRenderMixin$ScoreboardMixin",
+    "FeatureGroupDigitsScoreboardScoreMixin$GameGuiMixin",
+    "FeatureHigherFlySpeedMixin$PlayerAbilitiesMixin",
     "FeatureLongerChatMessageMixin$ChatScreenMixin"
   ],
   "injectors": {
