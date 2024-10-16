@@ -10,6 +10,7 @@
     "FeatureCreativeNoClipMixin$PlayerMixin",
     "FeatureCreativeNoClipMixin$RenderChunkMixin",
     "FeatureDisableFogMixin$GameRendererMixin",
+    "FeatureFixScoreboardNoRenderMixin$GameGuiMixin",
     "FeatureFixScoreboardNoRenderMixin$ScoreboardMixin",
     "FeatureGroupDigitsScoreboardScoreMixin$GameGuiMixin",
     "FeatureGroupDigitsScoreboardScoreMixin$PlayerEntityRendererMixin",
