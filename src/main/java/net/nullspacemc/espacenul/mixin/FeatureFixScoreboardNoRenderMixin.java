@@ -44,11 +44,12 @@ public class FeatureFixScoreboardNoRenderMixin {
 		)
 		private void addTotalAndRemainingScores(ScoreboardObjective width, int height, int text, TextRenderer par4, CallbackInfo ci, @Local Scoreboard scoreboard, @Local Collection<ScoreboardScore> scoreboardScores) {
 			List<ScoreboardScore> scores = (List<ScoreboardScore>) scoreboardScores;
+			ScoreboardObjective objective = scoreboard.getDisplayObjective(1);
 
-			ScoreboardScore remainingScore = new ScoreboardScore(scoreboard, scoreboard.getDisplayObjective(1), "Remaining");
+			ScoreboardScore remainingScore = new ScoreboardScore(scoreboard, objective, "Remaining");
 			remainingScore.set(
 				scoreboard
-					.getScores()
+					.getScores(objective)
 					.stream()
 					.sorted(ScoreboardScore.COMPARATOR.reversed())
 					.mapToInt(ScoreboardScore::get)
@@ -57,10 +58,10 @@ public class FeatureFixScoreboardNoRenderMixin {
 			);
 			if (remainingScore.get() != 0) scores.add(0, remainingScore);
 
-			ScoreboardScore totalScore = new ScoreboardScore(scoreboard, scoreboard.getDisplayObjective(1), "Total");
+			ScoreboardScore totalScore = new ScoreboardScore(scoreboard, objective, "Total");
 			totalScore.set(
 				scoreboard
-					.getScores()
+					.getScores(objective)
 					.stream()
 					.mapToInt(ScoreboardScore::get)
 					.sum()
